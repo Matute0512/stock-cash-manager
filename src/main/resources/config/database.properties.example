@@ -1,0 +1,10 @@
+﻿# =====================================================
+# ARCHIVO DE EJEMPLO - NO CONTIENE DATOS REALES
+# Copiar como database.properties y completar los valores
+# database.properties esta en .gitignore y NUNCA se sube al repo
+# =====================================================
+db.url=jdbc:mysql://localhost:3306/stock_cash_db?useSSL=false&serverTimezone=America/Argentina/Buenos_Aires&allowPublicKeyRetrieval=true
+db.username=TU_USUARIO_MYSQL
+db.password=TU_PASSWORD_MYSQL
+db.pool.maxSize=10
+db.pool.minIdle=2
