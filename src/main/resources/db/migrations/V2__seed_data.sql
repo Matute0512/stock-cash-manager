@@ -1,4 +1,4 @@
-﻿-- =====================================================================
+-- =====================================================================
 -- STOCK CASH MANAGER — Datos Iniciales (Seed)
 -- Archivo : V2__seed_data.sql
 -- Proposito: Insertar datos minimos para que el sistema sea operable.
