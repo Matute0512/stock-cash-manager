@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.stockcash.controller.LoginController"
+            prefWidth="900" prefHeight="580"
+            styleClass="root-pane"
+            stylesheets="@../css/styles.css">
+
+    <!-- ========== SIDEBAR IZQUIERDA ========== -->
+    <left>
+        <VBox styleClass="sidebar" alignment="CENTER" prefWidth="230" spacing="14">
+            <Label text="SCM" styleClass="logo-text"/>
+            <Label text="Stock Cash Manager" styleClass="logo-subtitle" wrapText="true"
+                   alignment="CENTER" textAlignment="CENTER"/>
+            <Label text="Sistema de Inventario" styleClass="logo-sub2"/>
+        </VBox>
+    </left>
+
+    <!-- ========== FORMULARIO CENTRAL ========== -->
+    <center>
+        <VBox alignment="CENTER" styleClass="login-background">
+            <VBox styleClass="login-card" spacing="20" maxWidth="380">
+                <padding><Insets top="40" right="40" bottom="32" left="40"/></padding>
+
+                <Label text="Iniciar Sesión" styleClass="login-title"/>
+
+                <!-- Campo usuario -->
+                <VBox spacing="6">
+                    <Label text="Usuario" styleClass="field-label"/>
+                    <TextField fx:id="usernameField"
+                               promptText="Ingrese su nombre de usuario"
+                               styleClass="input-field"/>
+                </VBox>
+
+                <!-- Campo contraseña -->
+                <VBox spacing="6">
+                    <Label text="Contraseña" styleClass="field-label"/>
+                    <PasswordField fx:id="passwordField"
+                                  promptText="Ingrese su contraseña"
+                                  styleClass="input-field"/>
+                </VBox>
+
+                <!-- Mensaje de error / intentos -->
+                <Label fx:id="messageLabel" styleClass="message-label"
+                       text="" wrapText="true" maxWidth="300" managed="false" visible="false"/>
+
+                <!-- Botón principal -->
+                <Button fx:id="loginButton"
+                        text="Ingresar"
+                        onAction="#onLogin"
+                        styleClass="btn-primary"
+                        defaultButton="true"
+                        maxWidth="Infinity"/>
+
+                <!-- Pie del card -->
+                <HBox alignment="CENTER_RIGHT" spacing="10">
+                    <Label fx:id="versionLabel" text="v1.0.0" styleClass="version-label"/>
+                    <Label text="🔒 Conexión segura" styleClass="secure-label"/>
+                </HBox>
+
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

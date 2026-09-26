@@ -1,0 +1,142 @@
+/* ============================================================
+   STOCK CASH MANAGER — Global Stylesheet
+   Paleta: ver docs/fase3-diseno/Wireframes-UI-v1.0.md §1
+   ============================================================ */
+
+/* ── Variables de color (JavaFX no soporta CSS vars nativas, usamos lookups) */
+.root { -fx-font-family: "Segoe UI", "Arial", sans-serif; -fx-font-size: 13px; }
+
+/* ── SIDEBAR ───────────────────────────────────────────────── */
+.sidebar {
+    -fx-background-color: #1E2A3A;
+    -fx-padding: 50 24 50 24;
+}
+.logo-text {
+    -fx-text-fill: white;
+    -fx-font-size: 52px;
+    -fx-font-weight: bold;
+}
+.logo-subtitle {
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+.logo-sub2 {
+    -fx-text-fill: #64748B;
+    -fx-font-size: 11px;
+}
+
+/* ── LOGIN ─────────────────────────────────────────────────── */
+.login-background {
+    -fx-background-color: #F3F4F6;
+}
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 24, 0, 0, 6);
+}
+.login-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+
+/* ── CAMPOS ────────────────────────────────────────────────── */
+.field-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+.input-field {
+    -fx-pref-height: 42px;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1.2;
+    -fx-padding: 0 14 0 14;
+    -fx-font-size: 13px;
+    -fx-background-color: white;
+}
+.input-field:focused {
+    -fx-border-color: #2563EB;
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.2), 6, 0, 0, 0);
+}
+
+/* ── BOTONES ───────────────────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 44px;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+}
+.btn-primary:hover     { -fx-background-color: #1D4ED8; }
+.btn-primary:pressed   { -fx-background-color: #1E40AF; }
+.btn-primary:disabled  { -fx-background-color: #93C5FD; }
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-text-fill: #374151;
+    -fx-pref-height: 36px;
+    -fx-cursor: hand;
+}
+.btn-secondary:hover { -fx-background-color: #F9FAFB; }
+
+.btn-danger {
+    -fx-background-color: #DC2626;
+    -fx-text-fill: white;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+}
+.btn-danger:hover { -fx-background-color: #B91C1C; }
+
+/* ── MENSAJES ──────────────────────────────────────────────── */
+.message-label        { -fx-text-fill: #DC2626; -fx-font-size: 12.5px; }
+.message-label-warn   { -fx-text-fill: #D97706; -fx-font-size: 12.5px; }
+.version-label        { -fx-text-fill: #9CA3AF; -fx-font-size: 11px; }
+.secure-label         { -fx-text-fill: #9CA3AF; -fx-font-size: 11px; }
+
+/* ── DASHBOARD / CONTENIDO GENERAL ────────────────────────── */
+.content-background   { -fx-background-color: #F3F4F6; }
+.page-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 10, 0, 0, 2);
+}
+
+/* ── TABLAS ────────────────────────────────────────────────── */
+.table-view { -fx-background-color: white; -fx-background-radius: 8; }
+.table-view .column-header { -fx-background-color: #F9FAFB; }
+.table-view .column-header-background { -fx-background-color: #F9FAFB; }
+.table-row-cell:odd  { -fx-background-color: #FAFAFA; }
+.table-row-cell:even { -fx-background-color: white; }
+.table-row-cell:selected { -fx-background-color: #DBEAFE; }
+
+/* ── BADGES DE ESTADO ──────────────────────────────────────── */
+.badge-active  { -fx-background-color: #D1FAE5; -fx-text-fill: #065F46;
+                 -fx-background-radius: 20; -fx-padding: 2 10 2 10; -fx-font-size: 11px; }
+.badge-inactive { -fx-background-color: #FEE2E2; -fx-text-fill: #991B1B;
+                  -fx-background-radius: 20; -fx-padding: 2 10 2 10; -fx-font-size: 11px; }
+.badge-warning  { -fx-background-color: #FEF3C7; -fx-text-fill: #92400E;
+                  -fx-background-radius: 20; -fx-padding: 2 10 2 10; -fx-font-size: 11px; }
+
+/* ── STATUS BAR (POS) ──────────────────────────────────────── */
+.status-bar {
+    -fx-background-color: #1E2A3A;
+    -fx-padding: 6 16 6 16;
+}
+.status-bar-label { -fx-text-fill: #94A3B8; -fx-font-size: 12px; }
+.status-bar-ok    { -fx-text-fill: #4ADE80; -fx-font-size: 12px; -fx-font-weight: bold; }
+.status-bar-warn  { -fx-text-fill: #F87171; -fx-font-size: 12px; -fx-font-weight: bold; }
